@@ -12,6 +12,10 @@ import React, { CSSProperties, ReactChild } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { useLocation } from "react-router-dom";
+import RegisterForm from "../results/register";
+import Login from "../results/belepes";
+
+
 
 function CarGallery({ car }: { car: any }) {
   const arrowStyles: CSSProperties = {
@@ -164,9 +168,9 @@ function CarGallery({ car }: { car: any }) {
                   width: "40vw",
                 }}
               >
-                <Typography sx={{ color: "#fff" }}>FIND YOUR MATCH</Typography>
+                {/* <Typography sx={{ color: "#fff" }}>FIND YOUR MATCH</Typography> */}
                 <Box sx={{ color: "#fff" }}>
-                  <Button
+                  {/* <Button
                     variant="contained"
                     disableElevation
                     sx={{
@@ -180,31 +184,26 @@ function CarGallery({ car }: { car: any }) {
                       },
                     }}
                   >
-                    THE NEW MAZDA CX 30
-                  </Button>
+                  
+                  </Button> */}
+                  <RegisterForm></RegisterForm>
+
                 </Box>
+
                 <Typography>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                  iusto repudiandae assumenda quam, minus nesciunt?
+
+                ★Regisztráció ↗
+                  <br></br>                 
+                  ★ Belépés ↘
                 </Typography>
+
+                  <Login>Belépés</Login>
+                  
                 <Box>
-                  <Button
-                    variant="contained"
-                    disableElevation
-                    sx={{
-                      borderRadius: 0,
-                      width: "20vw",
-                      textTransform: "capitalize",
-                      color: "#fff",
-                      bgcolor: "#ed1f1f",
-                      ":hover": {
-                        bgcolor: "#ed1f1f",
-                      },
-                    }}
-                  >
-                    GET QUOTE
-                  </Button>
+                  
+
                 </Box>
+                
               </Box>
 
               <Box
@@ -234,8 +233,9 @@ function CarGallery({ car }: { car: any }) {
                     },
                   }}
                 >
-                  GET QUOTE
+                    
                 </Button>
+                Megnézem
               </Box>
             </Box>
           </Box>

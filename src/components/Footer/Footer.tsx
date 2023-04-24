@@ -292,10 +292,10 @@ function Footer() {
                 }}
                 href="mailto:enquiries@cmcmotors.com"
               >
-                enquiries@cmcmotors.com
+                cmc@cmcmotors.com
               </Link>
               <br />
-              <Typography>Nairobi Kenya</Typography>
+              <Typography>Budapest</Typography>
             </address>
           </Box>
         </Box>
@@ -355,6 +355,7 @@ function Footer() {
                       {car.title}
                     </Typography>
                   </Box>
+                  
                 </Box>
               </NavLink>
             ))}

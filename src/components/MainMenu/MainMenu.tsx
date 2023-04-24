@@ -23,6 +23,11 @@ import CountrySelect from "./CountrySelect";
 import cmc from "./cmc.png";
 import { NavLink } from "react-router-dom";
 import { bgcolor } from "@mui/system";
+import RegisterForm from "../results/register";
+import Login from "../results/belepes";
+import { red } from "@mui/material/colors";
+
+
 
 function MainMenu() {
   return (
@@ -228,7 +233,7 @@ function MainMenu() {
               }}
             >
               <NavLink
-                to="/get-vehicle"
+                to=""
                 style={({ isActive }) => ({
                   backgroundColor: isActive ? "#ed1f1f" : "initial",
                 })}
@@ -245,11 +250,11 @@ function MainMenu() {
                     },
                   }}
                 >
-                  get vehicle
+                  köszöntjük az oldalon
                 </Button>
               </NavLink>
               <NavLink
-                to="/shop-parts"
+                to=""
                 style={({ isActive }) => ({
                   backgroundColor: isActive ? "#ed1f1f" : "initial",
                 })}
@@ -266,16 +271,18 @@ function MainMenu() {
                     border: "1px solid #bdbdbd",
                   }}
                 >
-                  Shop for parts
-                </Button>
+                  Reméljük megtalálja a számára legkedvezöbb jármüvet
+                </Button> 
               </NavLink>
               <NavLink
-                to="/after-sales"
+                to=""
                 style={({ isActive }) => ({
                   backgroundColor: isActive ? "#ed1f1f" : "initial",
                 })}
               >
-                <Button
+               
+                {/* <Button
+                  variant="outlined"
                   sx={{
                     width: { xs: "auto", lg: "15vw" },
                     textTransform: "capitalize",
@@ -284,10 +291,12 @@ function MainMenu() {
                       color: "#ed1f1f",
                     },
                     border: "1px solid #bdbdbd",
-                  }}
-                >
-                  After sales
-                </Button>
+                  }} */}
+                  
+
+                
+               
+      
               </NavLink>
             </Box>
           </Box>
@@ -354,7 +363,7 @@ function MenuDrawer() {
           "Tractors & Implements",
           "Vehicles",
           "Two Wheelers",
-          "Aftersales",
+          "Register",
           "About Us",
           "Contact Us",
         ].map((text, index) => (

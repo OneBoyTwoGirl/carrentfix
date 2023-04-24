@@ -1,9 +1,12 @@
-import { Star } from "@mui/icons-material";
+import { Login, Star } from "@mui/icons-material";
 import { Box, Button, IconButton, Typography } from "@mui/material";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { CarInterface, cars } from "../data/carsData";
 import { motion } from "framer-motion";
+import CarsListView from "./CarsListView";
+import Felulet from "./felulet";
+
 
 function CarGrid({ isGridView, carPrice }: { isGridView: Boolean, carPrice: [0, 0] | null }) {
 
@@ -26,6 +29,7 @@ function CarGrid({ isGridView, carPrice }: { isGridView: Boolean, carPrice: [0, 
   }
   return (
     <Box
+
       sx={{
         display: { xs: "grid", lg: isGridView ? "grid" : "none" },
         gridTemplateColumns: {
@@ -38,12 +42,14 @@ function CarGrid({ isGridView, carPrice }: { isGridView: Boolean, carPrice: [0, 
     >
       {allCars.map((car, i) => (
         <Box
+
         key={car.id}
           sx={{
             width: "100%",
             bgcolor: '#fbfbfb',
             ":nth-child(3n+2)": {
               bgcolor: "#ffffff",
+
             },
           }}
         >
@@ -127,7 +133,7 @@ function CarGrid({ isGridView, carPrice }: { isGridView: Boolean, carPrice: [0, 
                         component="span"
                         sx={{ color: "#ed1f1f" }}
                       >
-                        Ksh {car.price}
+                        Ár {car.price}
                       </Typography>
                     </Typography>
                   </Box>
@@ -241,7 +247,7 @@ function CarGrid({ isGridView, carPrice }: { isGridView: Boolean, carPrice: [0, 
                           ":hover": { bgcolor: "#585a6a" },
                         }}
                       >
-                        Description
+                       
                       </Button>
                     </NavLink>
                     <NavLink to="/quote">
@@ -256,8 +262,23 @@ function CarGrid({ isGridView, carPrice }: { isGridView: Boolean, carPrice: [0, 
                           ":hover": { bgcolor: "#ed1f1f" },
                         }}
                       >
-                        get quote
+                       
+
                       </Button>
+                
+                        <Felulet></Felulet>
+                        <Typography
+                        variant="subtitle1"
+                        sx={{
+                          textTransform: "capitalize",
+                          fontSize: "0.7rem",
+                          color: "#c1c1c1",
+                        }}
+                      >
+                        
+                      </Typography>
+                      
+
                     </NavLink>
                   </Box>
                 </Box>

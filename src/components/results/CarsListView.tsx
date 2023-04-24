@@ -203,7 +203,7 @@ function CarsListView({
                   <IconButton title="Location">
                     <PinDropOutlined sx={{ color: "#ff4605" }} />{" "}
                   </IconButton>
-                  Nairobi, Kenya
+                  Budapest
                 </Typography>
               </Box>
             </Box>
@@ -235,7 +235,7 @@ function CarsListView({
                   textOverflow="ellipsis"
                   sx={{ color: "#ff4605", width: "fit-content" }}
                 >
-                  Ksh.{car.price}
+                  Ár.{car.price}
                 </Typography>
                 <Box
                   sx={{

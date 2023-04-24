@@ -24,7 +24,7 @@ export interface CarInterface {
 export const cars: CarInterface[] = [
   {
     id: 1,
-    title: "Test Car",
+    title: "Land Rover",
     images: [car1, car2, car3, car4, car5, car6, car7, car8, car9, car10],
     price:  Math.floor(Math.random()*(100000 - 10000000)+10000000),
     year: 2015,
@@ -47,7 +47,7 @@ export const cars: CarInterface[] = [
   },
   {
     id: 2,
-    title: "Test Car",
+    title: "Lamborgini Aventador",
     images: [car1, car2, car3, car4, car5, car6, car7, car8, car9, car10],
     price:  Math.floor(Math.random()*(100000 - 10000000)+10000000),
     year: 2015,
@@ -71,7 +71,7 @@ export const cars: CarInterface[] = [
 
   {
     id: 3,
-    title: "Test Car",
+    title: "Hunday i20 N Inserto bodykit",
     images: [car1, car2, car3, car4, car5, car6, car7, car8, car9, car10],
     price:  Math.floor(Math.random()*(100000 - 10000000)+10000000),
     year: 2015,
@@ -94,7 +94,7 @@ export const cars: CarInterface[] = [
   },
   {
     id: 4,
-    title: "Test Car",
+    title: "Nissan 350z",
     images: [car1, car2, car3, car4, car5, car6, car7, car8, car9, car10],
     price:  Math.floor(Math.random()*(100000 - 10000000)+10000000),
     year: 2015,
@@ -117,7 +117,7 @@ export const cars: CarInterface[] = [
   },
   {
     id: 5,
-    title: "Test Car",
+    title: "Nissan 370",
     images: [car1, car2, car3, car4, car5, car6, car7, car8, car9, car10],
     price:  Math.floor(Math.random()*(100000 - 10000000)+10000000),
     year: 2015,

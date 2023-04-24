@@ -1,9 +1,4 @@
 import {
-  CompareArrows,
-  KeyboardDoubleArrowDownOutlined,
-  KeyboardDoubleArrowUpOutlined,
-} from "@mui/icons-material";
-import {
   Button,
   ButtonGroup,
   Checkbox,
@@ -33,6 +28,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 
 import Slider from "@mui/material/Slider";
 import { cars } from "../data/carsData";
+import { Login } from "@mui/icons-material";
 
 const categories = [
   { category: "all", count: 20 },
@@ -45,10 +41,10 @@ const isActiveLink = {
 };
 
 export interface IsearchData {
-  make: "";
-  model: "";
-  color: "";
-  year: "";
+  Márka: "";
+  Model: "";
+  Színállás: "";
+  Évjárat: "";
 }
 
 const months = [
@@ -75,10 +71,10 @@ function FilterForm({ getPrice }: { getPrice: any }) {
   const [showFilters, setShowFilters] = React.useState<boolean | false>(false);
   const [isHovered, setIsHovered] = React.useState<boolean | false>(false);
   const [filterData, setFilterData] = React.useState<IsearchData>({
-    make: "",
-    model: "",
-    color: "",
-    year: "",
+    Márka: "",
+    Model: "",
+    Színállás: "",
+    Évjárat: "",
   });
   const [yearErrors, setYearErrors] = React.useState<string>("");
   const [priceErrors, setPriceErrors] = React.useState<string>("");
@@ -254,7 +250,7 @@ function FilterForm({ getPrice }: { getPrice: any }) {
 
       <Box sx={{ width: "100%", mx: "auto", bgcolor: "#2b2d42" }}>
         <Typography sx={{ color: "#fff", fontSize: "0.8rem" }}>
-          PRICE RANGE
+          Ár lista
         </Typography>
         <Slider
           min={100000}
@@ -320,7 +316,7 @@ function FilterForm({ getPrice }: { getPrice: any }) {
                   width: "90%",
                 }}
               >
-                Ksh {cars[3].price}
+                Ár {cars[3].price}
               </Button>
             </Box>
             <Box sx={{ px: 2 }}>
@@ -434,7 +430,8 @@ function FilterForm({ getPrice }: { getPrice: any }) {
                   width: "90%",
                 }}
               >
-                GET QUOTE
+               
+
               </Button>
             </NavLink>
           </Box>
